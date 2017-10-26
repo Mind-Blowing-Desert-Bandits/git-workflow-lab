@@ -1,10 +1,10 @@
 'use strict'
 
-const showBooksTemplate = require('../templates/lab.handlebars')
+const showBooksTemplate = require('./templates/lab.handlebars')
 
 const getBooksSuccess = function (data) {
-    const showPlaysHtml = showBooksTemplate({ books: data.books })
-    $('#displayData').append(showPlaysHtml)
+  const showPlaysHtml = showBooksTemplate({ books: data.books })
+  $('#displayData').html(showPlaysHtml)
 }
 
 const failure = (error) => {
@@ -12,6 +12,7 @@ const failure = (error) => {
 }
 
 module.exports = {
-showBooksTemplate,
-getBooksSuccess
+  showBooksTemplate,
+  getBooksSuccess,
+  failure
 }
