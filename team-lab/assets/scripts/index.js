@@ -7,7 +7,7 @@ const submitValues = require('./events.js')
 $(() => {
   setAPIOrigin(location, config)
 
-  $('#getBooksButton').on('click', submitValues.onGetBooks)
+  $('#ajaxPull').on('click', submitValues.onGetBooks)
 })
 
 // use require with a reference to bundle the file and use it in this file

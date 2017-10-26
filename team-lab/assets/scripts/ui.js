@@ -1,6 +1,6 @@
 'use strict'
 
-const showBooksTemplate = require('../templates/book-listing.handlebars')
+const showBooksTemplate = require('../templates/lab.handlebars')
 
 const getBooksSuccess = function (data) {
     const showPlaysHtml = showBooksTemplate({ books: data.books })
