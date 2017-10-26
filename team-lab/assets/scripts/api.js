@@ -6,9 +6,6 @@ const getBooks = function () {
   return $.ajax({
     method: 'GET',
     url: config.apiOrigin + '/books'
-    // headers: {
-    //   Authorization: 'Token token=' + store.user.token
-    // }
   })
 }
 
