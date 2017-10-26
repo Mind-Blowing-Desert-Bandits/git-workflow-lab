@@ -2,9 +2,12 @@
 
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
+const submitValues = require('./events.js')
 
 $(() => {
   setAPIOrigin(location, config)
+
+  $('#getBooksButton').on('click', submitValues.onGetBooks)
 })
 
 // use require with a reference to bundle the file and use it in this file
